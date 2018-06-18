@@ -3,10 +3,21 @@
 
 // Require your modules
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var $ = require('gulp-load-plugins')();
 var rimraf = require('rimraf');
 var exec = require('child_process').exec;
 var prompt = require('gulp-prompt');
+
+gulp.task('sass', function () {
+  return gulp.src('styles/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./css'));
+});
+ 
+gulp.task('sass:watch', function () {
+  gulp.watch('styles/*.scss', ['sass']);
+});
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')

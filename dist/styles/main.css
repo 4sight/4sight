@@ -1,0 +1,271 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #15395D; }
+
+#stars {
+  background-image: url(../images/background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  width: 2050px;
+  height: 580px; }
+
+a {
+  text-decoration: none; }
+
+a:link {
+  color: #333; }
+
+a:active {
+  color: #333; }
+
+a:visited {
+  color: #333; }
+
+a:hover {
+  color: #333; }
+
+#top {
+  height: 40px;
+  text-align: center;
+  color: white;
+  padding-top: 4px;
+  letter-spacing: 10px; }
+
+.fa-phone, .fa-envelope-o, .fa-github, #email {
+  color: white; }
+
+#phoneText {
+  color: #DDDDDD;
+  font-size: 14px;
+  position: relative;
+  opacity: 0;
+  text-align: center;
+  font-size: 24px;
+  margin: 0px;
+  padding: 5px 0px 0px 0px; }
+
+h1 {
+  color: #DDDDDD;
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+h2 {
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: grey;
+  margin-bottom: 40px; }
+
+#main {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #main:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+h3 {
+  font-size: 20px; }
+
+.link {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #DDDDDD;
+  height: 300px;
+  padding: 0px 30px 10px 30px; }
+  .link:last-child {
+    margin-right: 0; }
+  .link p {
+    font-size: 14px; }
+
+.linkHover {
+  box-shadow: 0 0 20px 10px #7B5940; }
+
+.boxText {
+  font-size: 90px;
+  font-family: arial, sans-serif;
+  color: #666666; }
+
+footer {
+  text-align: center;
+  color: #DDDDDD; }
+
+.hiddenText {
+  display: inline-block; }
+
+#githubIcon {
+  opacity: 0.9;
+  position: relative;
+  top: -40px;
+  color: white;
+  right: -140px; }
+
+#linkedInIcon {
+  position: relative;
+  top: -40px;
+  opacity: 0.9;
+  color: white;
+  right: -10px; }
+
+#tumblrIcon {
+  position: relative;
+  top: -34px;
+  opacity: 0.9; }
+
+#soundcloudIcon {
+  position: relative;
+  height: 80px;
+  width: 80px;
+  bottom: 60px;
+  right: 4px;
+  opacity: 0.9; }
+
+#soundcloudText {
+  color: #DDDDDD;
+  font-size: 14px;
+  position: relative;
+  opacity: 0;
+  top: -100px;
+  right: 10px; }
+
+#linkedInText {
+  color: #DDDDDD;
+  font-size: 14px;
+  position: relative;
+  opacity: 0;
+  top: -48px;
+  right: -20px; }
+
+#githubText {
+  color: #DDDDDD;
+  font-size: 14px;
+  position: relative;
+  opacity: 0;
+  top: -48px;
+  left: -35px; }
+
+#copyright {
+  position: relative;
+  top: -100px; }
+
+#resume {
+  margin: 0 auto; }
+
+#download {
+  text-align: center;
+  border-radius: 50px;
+  background-color: #DDDDDD;
+  height: 38px;
+  width: 150px;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  left: 80px; }
+
+td {
+  padding: 0px 25px 0px 25px;
+  line-height: 22px; }
+  td a {
+    text-decoration: underline; }
+  td a:hover {
+    color: #7B5940; }
+
+.label {
+  width: 250px;
+  text-align: right; }
+
+#bar {
+  height: 40px;
+  background-color: black;
+  margin-bottom: 20px;
+  position: relative;
+  top: -14px; }
+
+.block {
+  padding-bottom: 20px; }
+
+.place {
+  display: inline;
+  font-weight: bold; }
+
+.bar {
+  display: inline;
+  padding: 0px 8px 0px 8px; }
+
+@media only screen and (max-width: 670px) {
+  #stars {
+    background-size: 1080px; }
+
+  h3 {
+    font-size: 16px;
+    color: #333; }
+
+  h2 {
+    color: #DDDDDD; }
+
+  .link p {
+    font-size: 12px; }
+
+  .hiddenText {
+    display: none; }
+
+  .image {
+    display: none; }
+
+  #bar {
+    display: none; }
+
+  .link {
+    background-color: transparent;
+    margin: 0px;
+    padding: 5px; }
+
+  .linkHover {
+    box-shadow: none; }
+
+  #githubIcon {
+    left: 5px; }
+
+  #tumblrIcon {
+    left: 70px; }
+
+  footer {
+    margin-top: 0px; } }
+@media only screen and (min-width: 670px) and (max-width: 900px) {
+  #stars {
+    background-size: 1080px; }
+
+  .image {
+    display: none; }
+
+  .link p {
+    font-size: 16px; } }
+@media only screen and (min-width: 900px) and (max-width: 1080px) {
+  #stars {
+    background-size: 1080px; }
+
+  .link p {
+    font-size: 13px; }
+
+  #bar {
+    display: none; }
+
+  .resume {
+    display: none; } }
+
+/*# sourceMappingURL=main.css.map */
