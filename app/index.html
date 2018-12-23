@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js">
   <head>
     <meta charset="utf-8">
@@ -9,24 +9,22 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+    <!-- <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" /> -->
     <!-- endbower -->
     <!-- endbuild -->
-
+    <script src="scripts/jquery.js" type="text/JavaScript"></script>
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="../dist/styles/main.css">
+    <link rel="stylesheet"  type="text/css" href="styles/main.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <!-- <script src="../node_modules/modernizr/src/modernizr.js"></script> -->
     <!-- endbuild -->
-
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body>
     <div id='top'>
-        <a href='mailto:horace.dawson@ncf.edu'><i class="fa fa-envelope-o fa-2x"></i></a>
-        <a href=''><i class="fa fa-phone fa-2x"></i></a>
+        <a href='mailto:horace.dawson@ncf.edu'><img src='images/envelope.png' id='envelopeIcon'></a>
+        <a href=''></a>
         <a href='https://github.com/4sight'><i class="fa fa-github fa-2x"></i></a>
     </div>
     <div id='stars'>
@@ -51,34 +49,29 @@
             </a>
             <a href='resume.html' class='link'>
                 <h3>3. Manage</h3>
-                <img src='images/graph.png' class='image' height=80px width=80px style='opacity: 0.7; margin-top: 0px; margin-bottom: -5px; height: 100px; width: 100px;'>
+                <img src='images/graph.png' class='image' height=80px width=80px style='opacity: 0.55; margin-top: 0px; margin-bottom: -2px; height: 100px; width: 100px;'>
                 <p>I work with clients to spread their online presence, drive user interaction, and optimize conversion.</p>
             </a>
         </div>
     </div>
-        <div id='bar'></div>
-        <footer>
-            <p style='margin-bottom: 20px;'><a href='horace.dawson@ncf.edu' id='email'>horace.dawson@ncf.edu</a></p>
-            <p style='margin-bottom: 50px; margin-top: -10px'>407.970.6356</p>
-            <a href='https://github.com/4sight' id='github'>
-                <i class="fa fa-github fa-2x" id='githubIcon'></i>
-                <div class='hiddenText' id='githubText'>Visit my Github profile</div>
-            </a>
-            <a href='https://www.linkedin.com/profile/view?id=115638716' id='linkedIn'>
-                <i class="fa fa-linkedin fa-2x" id='linkedInIcon'></i>
-                <div class='hiddenText' id='linkedInText'>Visit my LinkedIn profile</div>
-            </a>
-            <p><a href='http://soundcloud.com/4-sight' id='soundcloud'><img src='images/soundcloud.png' id='soundcloudIcon'>
-                <div class='hiddenText' id='soundcloudText'>Visit my Soundcloud page</div>
-            </a></p>
-            <p id='copyright'>Copyright &copy 2014 - Greeley Dawson</p>
-        </footer>
+    <div id='bar'></div>
+    <footer>
+        <p style='margin-bottom: 20px;'><a href='horace.dawson@ncf.edu' id='email'>horace.dawson@ncf.edu</a></p>
+        <p style='margin-bottom: 50px; margin-top: -10px'>407.970.6356</p>
+        <a href='https://github.com/4sight' id='github'><i class="fa fa-github fa-2x" id='githubIcon'></i></a>
+        <div class='hiddenText' id='githubText'>Visit my Github profile</div>
+        <a href='https://www.linkedin.com/profile/view?id=115638716' id='linkedIn'><i class="fa fa-linkedin fa-2x" id='linkedInIcon'></i></a>
+        <div class='hiddenText' id='linkedInText'>Visit my LinkedIn profile</div>
+        <p><a href='http://soundcloud.com/4-sight' id='soundcloud'><img src='images/soundcloud.png' id='soundcloudIcon'></a>
+            <div class='hiddenText' id='soundcloudText'>Visit my Soundcloud page</div>
+        </p>
+        <p id='copyright'>Copyright &copy 2014 - Greeley Dawson</p>
+    </footer>
     <!-- </div> -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/underscore/underscore.js"></script>
+    <!-- <script src="../bower_components/underscore/underscore.js" type="text/JavaScript"></script> -->
     <!-- endbower -->
     <!-- endbuild -->
 

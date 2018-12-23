@@ -98,8 +98,18 @@ h3 {
 
 .boxText {
   font-size: 90px;
-  font-family: arial, sans-serif;
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
   color: #666666; }
+
+#skills {
+  color: #DDDDDD;
+  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  padding-left: 150px; }
+
+.skill {
+  height: 200px; }
 
 footer {
   text-align: center;
@@ -141,7 +151,11 @@ footer {
   position: relative;
   opacity: 0;
   top: -100px;
-  right: 10px; }
+  right: -2px; }
+
+#envelopeIcon {
+  height: 40px;
+  width: 40px; }
 
 #linkedInText {
   color: #DDDDDD;
@@ -157,7 +171,7 @@ footer {
   position: relative;
   opacity: 0;
   top: -48px;
-  left: -35px; }
+  /*left: -15px;*/ }
 
 #copyright {
   position: relative;
