@@ -32,7 +32,7 @@ a:visited {color: #333;}
 a:hover {color: #333;}
 
 #top {
-  height: 40px;
+  height: 42px;
   text-align: center;
   color: white;
   padding-top: 4px;
@@ -166,27 +166,29 @@ footer {
   right: -2px;
 }
 
+$headerOpacity: 0.8;
+
 #envelopeIcon {
   height: 40px;
   width: 36px;
-  opacity: 0.5;
+  opacity: $headerOpacity;
 }
 
 #phoneIcon {
-  height: 38px;
-  width: 38px;
-  opacity: 0.5;
+  height: 30px;
+  width: 30px;
+  opacity: 0.7;
   position: relative;
-  top: -2px;
+  top: -7px;
 }
 
 #githubIcon {
   height: 36px;
   width: 36px;
-  opacity: 0.5;
+  opacity: $headerOpacity;
   position: relative;
   top: -5px;
-  left: -5px;
+  left: -2px;
 }
 
 #linkedInText {
