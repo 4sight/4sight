@@ -46,7 +46,7 @@ $('a#soundcloud').hover(function(){
 			opacity: 0
 		})
 	});
-$('.fa-phone').hover(function(){
+$('a#phone').hover(function(){
 	$('#phoneText').filter(':not(:animated)').animate({
 		opacity: 1
 	})},

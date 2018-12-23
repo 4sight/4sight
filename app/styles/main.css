@@ -5,7 +5,8 @@
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #15395D; }
+  background-color: #15395D;
+  margin: 0px; }
 
 #stars {
   background-image: url(../images/background.jpg);
@@ -41,14 +42,13 @@ a:hover {
   color: white; }
 
 #phoneText {
+  /*@include hiddenText;*/
   color: #DDDDDD;
-  font-size: 14px;
-  position: relative;
-  opacity: 0;
   text-align: center;
   font-size: 24px;
   margin: 0px;
-  padding: 5px 0px 0px 0px; }
+  padding: 5px 0px 0px 0px;
+  opacity: 0; }
 
 h1 {
   color: #DDDDDD;
@@ -155,7 +155,23 @@ footer {
 
 #envelopeIcon {
   height: 40px;
-  width: 40px; }
+  width: 36px;
+  opacity: 0.5; }
+
+#phoneIcon {
+  height: 38px;
+  width: 38px;
+  opacity: 0.5;
+  position: relative;
+  top: -2px; }
+
+#githubIcon {
+  height: 36px;
+  width: 36px;
+  opacity: 0.5;
+  position: relative;
+  top: -5px;
+  left: -5px; }
 
 #linkedInText {
   color: #DDDDDD;
