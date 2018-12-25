@@ -398,15 +398,13 @@ and (max-width : 670px) {
     margin: 0px;
     padding: 5px;
   }
-  .linkHover {
-    box-shadow: none;
-  }
   #githubIconTop {
     left: 5px;
   }
   .experience {
     display: inline-block;
-    margin: 0 auto;
+    margin-bottom: 30px;  
+    float: none;
   }
   #experience {
     left: 0px;
@@ -416,7 +414,14 @@ and (max-width : 670px) {
   }
   #footerWrapper {
     display: block;
-    float: right;
+  }
+  #linkedinIcon {
+    left: -44px;
+  }
+  #githubIconBottom {
+    position: relative;
+    top: -42px;
+    left: 44px;
   }
 }
 

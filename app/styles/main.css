@@ -351,21 +351,25 @@ td {
     background-color: transparent;
     margin: 0px;
     padding: 5px; }
-  .linkHover {
-    box-shadow: none; }
   #githubIconTop {
     left: 5px; }
   .experience {
     display: inline-block;
-    margin: 0 auto; }
+    margin-bottom: 30px;
+    float: none; }
   #experience {
     left: 0px;
     top: 40px;
     text-align: center;
     clear: right; }
   #footerWrapper {
-    display: block;
-    float: right; } }
+    display: block; }
+  #linkedinIcon {
+    left: -44px; }
+  #githubIconBottom {
+    position: relative;
+    top: -42px;
+    left: 44px; } }
 
 @media only screen and (min-width: 670px) and (max-width: 980px) {
   #stars {
