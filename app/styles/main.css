@@ -203,6 +203,11 @@ h3 {
   color: #DDDDDD;
   font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif; }
 
+#experienceTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
 .experienceText {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -320,17 +325,26 @@ td {
 @media only screen and (max-width: 670px) {
   #stars {
     background-size: 1080px; }
+  #main {
+    position: relative;
+    top: 30px; }
   h3 {
-    font-size: 16px;
-    color: #333; }
+    font-size: 24px;
+    color: #DDDDDD; }
   h2 {
     color: #DDDDDD; }
   .step p {
     font-size: 12px; }
+  .stepText {
+    color: #DDDDDD; }
   .hiddenText {
     display: none; }
-  .image {
+  .stepImage {
     display: none; }
+  #step2image {
+    display: none; }
+  #step2text {
+    top: 0px; }
   #bar {
     display: none; }
   .step {
@@ -341,18 +355,53 @@ td {
     box-shadow: none; }
   #githubIconTop {
     left: 5px; }
-  #tumblrIcon {
-    left: 70px; }
-  footer {
-    margin-top: 0px; } }
+  .experience {
+    display: inline-block;
+    margin: 0 auto; }
+  #experience {
+    left: 0px;
+    top: 40px;
+    text-align: center;
+    clear: right; }
+  #footerWrapper {
+    display: block;
+    float: right; } }
 
 @media only screen and (min-width: 670px) and (max-width: 980px) {
   #stars {
     background-size: 1080px; }
-  .image {
+  .stepImage,
+  .experienceImage {
     display: none; }
-  .step p {
-    font-size: 16px; } }
+  h3 {
+    position: relative;
+    top: 40px; }
+  .stepText {
+    position: relative;
+    top: 40px; }
+  #step2text {
+    top: 40px; }
+  #step2image {
+    display: none; }
+  .experience {
+    width: 31%;
+    height: 300px; }
+  .step p,
+  .experience p {
+    font-size: 16px; }
+  #experience {
+    position: relative;
+    left: 20px; }
+  h4 {
+    position: relative;
+    top: 30px; }
+  .experienceText {
+    position: relative;
+    top: 50px; }
+  #essentialEconomyText {
+    top: 20px; }
+  #surfAndPaddleText {
+    top: 20px; } }
 
 @media only screen and (min-width: 980px) and (max-width: 1080px) {
   #main,
