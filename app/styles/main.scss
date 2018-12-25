@@ -97,7 +97,7 @@ h3 {
   background-image: url('images/empty.gif');
   }
 
-.link {
+.step {
   @include span-columns(4);
   text-align: center;
   border-radius: 50px;
@@ -109,7 +109,7 @@ h3 {
   }
 }
 
-.experienceLink {
+.experience {
   @include span-columns(4);
   text-align: center;
   border-radius: 50px;
@@ -145,12 +145,12 @@ h4 {
 
 #essentialEconomyText {
   position: relative;
-  top: -40px;
+  top: -20px;
 }
 
 #surfAndPaddleText {
   position: relative;
-  top: 34px;
+  top: 54px;
 }
 
 .linkHover {
@@ -222,6 +222,10 @@ h3 {
   left: 140px;
   color: #DDDDDD;
   font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+}
+
+.experienceText {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #linkedinIcon {
@@ -357,7 +361,7 @@ and (max-width : 670px) {
   h2 {
     color: #DDDDDD;
   }
-  .link p {
+  .step p {
     font-size: 12px;
   }
   .hiddenText {
@@ -369,7 +373,7 @@ and (max-width : 670px) {
   #bar {
     display: none;
   }
-  .link {
+  .step {
     background-color: transparent;
     margin: 0px;
     padding: 5px;
@@ -390,31 +394,108 @@ and (max-width : 670px) {
 
 @media only screen
 and (min-width : 670px)
-and (max-width : 900px) {
+and (max-width : 980px) {
   #stars {
     background-size: 1080px;
   }
   .image {
     display: none;
   }
-  .link p {
+  .step p {
     font-size: 16px;
   }
 }
 
 @media only screen
-and (min-width : 900px)
+and (min-width : 980px)
 and (max-width : 1080px) {
+  #main,
+  #experience {
+    position: relative;
+    left: 5%;
+  }
+  .experience,
+  .step {
+      width: 30%;
+      height: 300px;
+      font-size: 13px;
+    }
   #stars {
     background-size: 1080px;
   }
-  .link p {
+  .step p,
+  .experience p {
     font-size: 13px;
   }
   #bar {
     display: none;
   }
-  .resume {
-    display: none;
+  #footerWrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 30px;
   }
 }
+
+@media only screen
+and (min-width : 1080px)
+and (max-width : 1350px) {
+  #main {
+    position: relative;
+    left: 3%;
+  }
+  #experience {
+    position: relative;
+    left: 10%;
+  }
+  .step {
+      width: 30%;
+      height: 300px;
+  }
+  .experience {
+    width: 27%;
+    height: 300px;
+  }
+  #footerWrapper {
+    position: relative;
+    left: 30px;
+  }
+  #essentialEconomyLogo {
+    height: 100px;
+    width: 190px;
+  }
+  #essentialEconomyText {
+    position: relative;
+    top: -40px;
+  }
+  #surfAndPaddleText {
+    position: relative;
+    top: 34px;
+  }
+}
+
+/*@media only screen
+and (min-width : 1349px)
+and (max-width : 1350px) {
+  #main {
+    position: relative;
+    left: 3%;
+  }
+  #experience {
+    position: relative;
+    left: 12%;
+  }
+  .step {
+      width: 30%;
+      height: 300px;
+  }
+  .experience {
+    width: 25%;
+    height: 300px;
+  }
+  #footerWrapper {
+    position: relative;
+    left: 30px;
+  }
+}*/

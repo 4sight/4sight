@@ -1,7 +1,7 @@
-$('.experienceLink').mouseenter(function(){
+$('.experience').mouseenter(function(){
 	$(this).addClass('linkHover');
 });
-$('.experienceLink').mouseleave(function(){
+$('.experience').mouseleave(function(){
   $(this).removeClass('linkHover');
 });
 $('a.resume').mouseenter(function(){
