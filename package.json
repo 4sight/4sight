@@ -1,7 +1,8 @@
 {
   "private": true,
   "engines": {
-    "node": ">=0.10.0"
+    "node": "8.10.0",
+    "npm": "6.4.1"
   },
   "devDependencies": {
     "bootstrap": "^4.2.1",
