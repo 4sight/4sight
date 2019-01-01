@@ -275,11 +275,12 @@ h3 {
   position: relative;
   top: -120px; }
 
-#resume {
-  height: 120px;
-  width: 120px;
+#freeclouds {
+  width: 250px;
+  height: auto;
   position: relative;
-  left: 10px; }
+  left: 10px;
+  opacity: 0.73; }
 
 #download {
   text-align: center;
@@ -375,7 +376,7 @@ td {
   #stars {
     background-size: 1080px; }
   .stepImage,
-  .experienceImage {
+  .freecloudsImage {
     display: none; }
   h3 {
     position: relative;
