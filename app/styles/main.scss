@@ -147,9 +147,14 @@ h4 {
   top: -20px;
 }
 
+#freecloudsText {
+  position: relative;
+  bottom: 4px;
+}
+
 #surfAndPaddleText {
   position: relative;
-  top: 54px;
+  top: 24px;
 }
 
 .linkHover {
@@ -297,7 +302,7 @@ h3 {
   top: -120px;
 }
 
-#freeclouds {
+#freecloudsLogo {
   width: 250px;
   height: auto;
   position: relative;
@@ -432,7 +437,7 @@ and (max-width : 980px) {
     background-size: 1080px;
   }
   .stepImage,
-  .freecloudsImage {
+  .freecloudsLogo {
     display: none;
   }
   h3 {
@@ -455,7 +460,7 @@ and (max-width : 980px) {
   }
   .step p,
   .experience p, {
-    font-size: 16px;
+    font-size: 13px;
   }
   #experience {
     position: relative;
@@ -469,11 +474,20 @@ and (max-width : 980px) {
     position: relative;
     top: 50px;
   }
+  #essentialEconomyLogo {
+    display: none;
+  }
   #essentialEconomyText {
     top: 20px;
   }
   #surfAndPaddleText {
     top: 20px;
+  }
+  #freecloudsLogo {
+    display: none;
+  }
+  #freecloudsText {
+    top: 24px;
   }
 }
 
@@ -506,6 +520,17 @@ and (max-width : 1080px) {
     margin-left: auto;
     margin-right: auto;
     left: 30px;
+  }
+  #essentialEconomyText {
+    top: -40px;
+  }
+  #freecloudsLogo {
+    width: 200px;
+    height: auto;
+    top: 20px;
+  }
+  #freecloudsText {
+    top: 24px;
   }
 }
 
