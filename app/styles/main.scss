@@ -431,7 +431,7 @@ and (max-width : 670px) {
 }
 
 @media only screen
-and (min-width : 670px)
+and (min-width : 671px)
 and (max-width : 980px) {
   #stars {
     background-size: 1080px;
@@ -456,7 +456,7 @@ and (max-width : 980px) {
   }
   .experience {
     width: 31%;
-    height: 300px;
+    height: 240px;
   }
   .step p,
   .experience p, {
@@ -474,6 +474,10 @@ and (max-width : 980px) {
     position: relative;
     top: 50px;
   }
+  #essentialEconomyTitle {
+    position: relative;
+    top: 30px;
+  }
   #essentialEconomyLogo {
     display: none;
   }
@@ -488,6 +492,9 @@ and (max-width : 980px) {
   }
   #freecloudsText {
     top: 24px;
+  }
+  #wave {
+    display: none;
   }
 }
 
@@ -570,28 +577,3 @@ and (max-width : 1350px) {
     top: 34px;
   }
 }
-
-/*@media only screen
-and (min-width : 1349px)
-and (max-width : 1350px) {
-  #main {
-    position: relative;
-    left: 3%;
-  }
-  #experience {
-    position: relative;
-    left: 12%;
-  }
-  .step {
-      width: 30%;
-      height: 300px;
-  }
-  .experience {
-    width: 25%;
-    height: 300px;
-  }
-  #footerWrapper {
-    position: relative;
-    left: 30px;
-  }
-}*/

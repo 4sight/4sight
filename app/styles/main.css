@@ -376,7 +376,7 @@ td {
     top: -42px;
     left: 44px; } }
 
-@media only screen and (min-width: 670px) and (max-width: 980px) {
+@media only screen and (min-width: 671px) and (max-width: 980px) {
   #stars {
     background-size: 1080px; }
   .stepImage,
@@ -394,7 +394,7 @@ td {
     display: none; }
   .experience {
     width: 31%;
-    height: 300px; }
+    height: 240px; }
   .step p,
   .experience p {
     font-size: 13px; }
@@ -407,6 +407,9 @@ td {
   .experienceText {
     position: relative;
     top: 50px; }
+  #essentialEconomyTitle {
+    position: relative;
+    top: 30px; }
   #essentialEconomyLogo {
     display: none; }
   #essentialEconomyText {
@@ -416,7 +419,9 @@ td {
   #freecloudsLogo {
     display: none; }
   #freecloudsText {
-    top: 24px; } }
+    top: 24px; }
+  #wave {
+    display: none; } }
 
 @media only screen and (min-width: 980px) and (max-width: 1080px) {
   #main,
@@ -474,28 +479,3 @@ td {
   #surfAndPaddleText {
     position: relative;
     top: 34px; } }
-
-/*@media only screen
-and (min-width : 1349px)
-and (max-width : 1350px) {
-  #main {
-    position: relative;
-    left: 3%;
-  }
-  #experience {
-    position: relative;
-    left: 12%;
-  }
-  .step {
-      width: 30%;
-      height: 300px;
-  }
-  .experience {
-    width: 25%;
-    height: 300px;
-  }
-  #footerWrapper {
-    position: relative;
-    left: 30px;
-  }
-}*/
