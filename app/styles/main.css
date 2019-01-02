@@ -438,8 +438,6 @@ td {
   .step p,
   .experience p {
     font-size: 13px; }
-  #bar {
-    display: none; }
   #footerWrapper {
     position: relative;
     margin-left: auto;

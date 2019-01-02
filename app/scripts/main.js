@@ -46,10 +46,10 @@ $('a#soundcloud').hover(function(){
 			opacity: 0
 		})
 	});
-$('a#phone').click(function(){
-	$('#phoneText').filter(':not(:animated)').animate({
-		opacity: 1
-	})};
+// $('a#phone').click(function(){
+// 	$('#phoneText').filter(':not(:animated)').animate({
+// 		opacity: 1
+// 	})};
 $('a#phone').hover(function(){
 	$('#phoneText').filter(':not(:animated)').animate({
 		opacity: 1
