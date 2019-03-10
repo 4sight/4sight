@@ -240,7 +240,10 @@ h3 {
   opacity: 0.9; }
 
 #soundcloudText {
-  /*  @include hiddenText;*/
+  color: #DDDDDD;
+  font-size: 14px;
+  position: relative;
+  opacity: 0;
   top: -120px;
   right: -2px; }
 
