@@ -140,9 +140,9 @@ h4 {
   position: relative;
   top: -20px; }
 
-#freecloudsText {
+#freshairText {
   position: relative;
-  bottom: 4px; }
+  top: -50px; }
 
 #surfAndPaddleText {
   position: relative;
@@ -279,12 +279,12 @@ h3 {
   position: relative;
   top: -120px; }
 
-#freecloudsLogo {
-  width: 250px;
+#freshairLogo {
+  width: 150px;
   height: auto;
   position: relative;
-  left: 10px;
-  opacity: 0.73; }
+  top: -30px;
+  opacity: 0.82; }
 
 #download {
   text-align: center;
@@ -380,7 +380,7 @@ td {
   #stars {
     background-size: 1080px; }
   .stepImage,
-  .freecloudsLogo {
+  .freshairLogo {
     display: none; }
   h3 {
     position: relative;
@@ -416,9 +416,9 @@ td {
     top: 20px; }
   #surfAndPaddleText {
     top: 20px; }
-  #freecloudsLogo {
+  #freshairLogo {
     display: none; }
-  #freecloudsText {
+  #freshairText {
     top: 24px; }
   #wave {
     display: none; } }
@@ -445,11 +445,11 @@ td {
     left: 30px; }
   #essentialEconomyText {
     top: -40px; }
-  #freecloudsLogo {
+  #freshairLogo {
     width: 200px;
     height: auto;
     top: 20px; }
-  #freecloudsText {
+  #freshairText {
     top: 24px; } }
 
 @media only screen and (min-width: 1080px) and (max-width: 1350px) {
