@@ -418,6 +418,10 @@ and (max-width : 670px) {
     text-align: center;
     clear: right;
   }
+  #freshairTitle {
+    position: relative;
+    left: 16px;
+  }
   #footerWrapper {
     display: block;
   }
@@ -485,8 +489,12 @@ and (max-width : 980px) {
   #essentialEconomyText {
     top: 20px;
   }
-  #surfAndPaddleText {
+  #freecloudsText {
     top: 20px;
+  }
+  #freshairTitle {
+    position: relative;
+    left: 16px;
   }
   #freshairLogo {
     display: none;
@@ -494,7 +502,7 @@ and (max-width : 980px) {
   #freshairText {
     top: 24px;
   }
-  #wave {
+  #freecloudsLogo {
     display: none;
   }
 }
@@ -526,16 +534,40 @@ and (max-width : 1080px) {
     margin-right: auto;
     left: 30px;
   }
+  .experienceText {
+    position: relative;
+    top: 50px;
+  }
+  #essentialEconomyTitle {
+    position: relative;
+    top: 10px;
+  }
+  #essentialEconomyLogo {
+    display: none;
+  }
   #essentialEconomyText {
-    top: -40px;
+    top: 20px;
+  }
+  #freecloudsTitle {
+    position: relative;
+    top: 10px;
+  }
+  #freecloudsText {
+    top: 20px;
+  }
+  #freshairTitle {
+    position: relative;
+    top: 10px;
+    left: 16px;
   }
   #freshairLogo {
-    width: 200px;
-    height: auto;
-    top: 20px;
+    display: none;
   }
   #freshairText {
     top: 24px;
+  }
+  #freecloudsLogo {
+    display: none;
   }
 }
 
