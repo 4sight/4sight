@@ -19,12 +19,12 @@ gulp.task('hello', function() {
 // -----------------
 
 // Start browserSync server
-gulp.task('browserSync', function() {
-  browserSync({
+gulp.task('browserSyncPackage', function() {
+  browserSync.init({
     server: {
       baseDir: 'app'
     },
-      browser: 'Chrome'
+      browser: 'Firefox'
   })
 })
 
@@ -32,16 +32,17 @@ gulp.task('sass', function() {
   return gulp.src('app/styles/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
     .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
     .pipe(gulp.dest('app/styles')) // Outputs it in the css folder
-    .pipe(browserSync.reload({ // Reloading with Browser Sync
+    .pipe(function(){
+    browserSync.reload({ // Reloading with Browser Sync
       stream: true
-    }));
+    })});
 })
 
 // Watchers
 gulp.task('watch', function() {
-  gulp.watch('app/styles/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('app/styles/**/*.scss', gulp.series('sass'));
+  gulp.watch('app/*.html', gulp.series(browserSync.reload));
+  gulp.watch('app/js/**/*.js', gulp.series(browserSync.reload));
 })
 
 // Optimization Tasks 
@@ -87,11 +88,10 @@ gulp.task('clean:dist', function() {
 // Build Sequences
 // ---------------
 
-gulp.task('default', function(callback) {
-  runSequence(['sass', 'browserSync'], 'watch',
-    callback
-  )
-})
+gulp.task('default', gulp.series(gulp.parallel(
+  'browserSyncPackage', 'watch'), function(done){
+  done();
+}));
 
 gulp.task('build', function(callback) {
   runSequence(
