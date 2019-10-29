@@ -4,13 +4,13 @@ $('.experience').mouseenter(function(){
 $('.experience').mouseleave(function(){
 	$(this).removeClass('linkHover');
 });
-$(window).scroll(function(){
-	if($(window).scrollTop() > 300){
-		$('.experience').addClass('show');
-	} else {
-		$('.experience').removeClass('show');
-	}
-});
+// $(window).scroll(function(){
+// 	if($(window).scrollTop() > 300){
+// 		$('.experience').addClass('show');
+// 	} else {
+// 		$('.experience').removeClass('show');
+// 	}
+// });
 $('a.resume').mouseenter(function(){
 	$(this).addClass('linkHover');
 });

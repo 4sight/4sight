@@ -110,7 +110,7 @@ h3 {
 
 .experience {
   @include span-columns(4);
-  opacity: 0;
+  opacity: 1;
   text-align: center;
   border-radius: 50px;
   background-color: #DDDDDD;
@@ -129,9 +129,9 @@ h3 {
   transition: all 1s ease;
 }
 
-.show {
+/*.show {
   opacity: 1;
-}
+}*/
 
 .experienceImage {
   transition: transform .2s;
