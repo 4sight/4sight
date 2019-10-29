@@ -517,7 +517,7 @@ and (max-width : 980px) {
   #freshairText {
     top: 24px;
   }
-  #wave {
+  #freecloudsLogo {
     display: none;
   }
 }
@@ -549,12 +549,16 @@ and (max-width : 1080px) {
     margin-right: auto;
     left: 30px;
   }
+  #essentialEconomyLogo {
+    margin-top: 20px;
+  }
   #essentialEconomyText {
     top: -40px;
   }
   #freshairLogo {
-    width: 200px;
-    height: auto;
+    margin-top: -40px;
+    width: 140px;
+    height: 140px;
     top: 20px;
   }
   #freshairText {
@@ -596,5 +600,14 @@ and (max-width : 1350px) {
   #surfAndPaddleText {
     position: relative;
     top: 34px;
+  }
+}
+
+@media only screen
+and (min-width : 1351px) {
+  #footerWrapper {
+    position: relative;
+    top: 360px;
+    left: -660px;
   }
 }
