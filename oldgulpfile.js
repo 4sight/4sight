@@ -9,7 +9,6 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
-var sourcemaps = require('gulp-sourcemaps');
 
 // Basic Gulp task syntax
 gulp.task('hello', function() {
@@ -20,7 +19,7 @@ gulp.task('hello', function() {
 // -----------------
 
 // Start browserSync server
-gulp.task('browserSyncPackage', function() {
+gulp.task('browserSyncTask', function(){
   browserSync.init({
     server: {
       baseDir: 'app'
@@ -29,65 +28,21 @@ gulp.task('browserSyncPackage', function() {
   })
 })
 
-function style() {
-  
-    // Where should gulp look for the sass files?
-  
-    // My .sass files are stored in the styles folder
-  
-    // (If you want to use scss files, simply look for *.scss files instead)
-  
-    return (
-  
-        gulp
-  
-            .src("./app/styles/*.scss")
-  
- 
-  
-            // Use sass with the files found, and log any errors
-  
-            .pipe(sass())
-  
-            .on("error", sass.logError)
-  
- 
-  
-            // What is the destination for the compiled file?
-  
-            .pipe(gulp.dest("./app/styles"))
-  
-    );
-  
-}
-  
- 
-  
-// Expose the task by exporting it
-  
-// This allows you to run it from the commandline using
-  
-// $ gulp style
-  
-exports.style = style;
+gulp.task('sass', function() {
+  return gulp.src('app/styles/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+    .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+    .pipe(gulp.dest('app/styles')) // Outputs it in the css folder
+    .pipe(browserSync.reload({ // Reloading with Browser Sync
+      stream: true
+    }));
+})
 
 // Watchers
-function watch() {
-    browserSync.init({
-        server:{
-            baseDir: 'app/'
-        }
-    });
-    //     gulp.watch('./scss/**/*.scss'), sass);
-    gulp.watch('./app/styles/*.scss', style);
-    gulp.watch('./app/styles/*.scss').on('change', browserSync.reload);
-    gulp.watch('./app/*.html').on('change', browserSync.reload);
-    gulp.watch('./scss/**/*.js').on('change', browserSync.reload);
-
-}
-
-exports.watch = watch;
-gulp.task('default', watch);
+gulp.task('watch', function() {
+  gulp.watch('app/styles/**/*.scss', ['sass']);
+  gulp.watch('app/*.html', browserSync.reload);
+  gulp.watch('app/js/**/*.js', browserSync.reload);
+})
 
 // Optimization Tasks 
 // ------------------
@@ -132,11 +87,10 @@ gulp.task('clean:dist', function() {
 // Build Sequences
 // ---------------
 
-gulp.task('build', function(callback) {
-  runSequence(
-    'clean:dist',
-    'sass',
-    ['useref', 'images', 'fonts'],
-    callback
-  )
-})
+gulp.task('default', gulp.series('sass', 'browserSyncTask', 'watch', function(done){
+  done();
+}));
+
+gulp.task('build', gulp.series('clean:dist', 'sass', 'useref', 'images', 'fonts', function(done){
+    done();
+}));
