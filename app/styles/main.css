@@ -115,8 +115,7 @@ h3 {
   height: 300px;
   width: 340px;
   color: black;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0px 30px 10px 30px;
   position: relative;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
@@ -198,7 +197,9 @@ footer {
   display: inline-block;
   text-align: center;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative;
+  left: 100px; }
 
 .hiddenText {
   display: inline-block; }
@@ -224,7 +225,7 @@ h3 {
 
 #experience {
   position: relative;
-  left: 140px;
+  left: 240px;
   color: #DDDDDD;
   font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif; }
 
