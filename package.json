@@ -42,7 +42,7 @@
     "rimraf": "^2.6.2",
     "run-sequence": "^2.2.1",
     "streamqueue": "^0.1.1",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "wiredep": "^1.4.3"
   },
   "dependencies": {
