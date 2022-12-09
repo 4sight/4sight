@@ -49,7 +49,7 @@
     "babel-register": "^6.26.0",
     "bourbon": "^5.0.1",
     "bower": "^1.8.4",
-    "express": "^4.8.7",
+    "express": "^4.17.3",
     "gulp-changed": "^4.0.2",
     "gulp-coffee": "^3.0.3",
     "gulp-coffeelint": "^0.6.0",
