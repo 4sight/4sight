@@ -20,7 +20,7 @@ gulp.task('hello', function() {
 // -----------------
 
 // Start browserSync server
-gulp.task('browserSyncPackage', function() {
+gulp.task('browserSyncPackage', function(){
   browserSync.init({
     server: {
       baseDir: 'app'
