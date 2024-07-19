@@ -4,6 +4,13 @@
     "node": "8.10.0",
     "npm": "6.4.1"
   },
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon --ext html,css,sccs,js"
+  },
+  "watch": {
+    "test": "app/{*.scss,*.js,*.html}"
+  },
   "devDependencies": {
     "autoprefixer": "^9.7.0",
     "bootstrap": "^4.2.1",
@@ -71,14 +78,13 @@
     "karma": "^4.4.1",
     "natives": "^1.1.6",
     "node-neat": "^2.0.0-beta.0",
+    "npm-watch": "^0.13.0",
     "panini": "^1.6.3",
     "ruby": "^0.6.1",
     "rubygems": "^1.0.3",
     "sass": "^1.3.2",
     "style-sherpa": "^1.0.2",
+    "watch": "^1.0.2",
     "webpack": "^4.41.2"
-  },
-  "scripts": {
-    "start": "node server.js"
   }
 }
