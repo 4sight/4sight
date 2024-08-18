@@ -17,27 +17,32 @@ body {
   background-repeat: no-repeat;
   max-width: 100%;
   width: 2050px;
-  height: 580px;
+  height: 640px;
 }
 
 a {
   text-decoration: none;
 }
 
-a:link {
-  color: white;
+/*a:link {color: #333;}
+a:active {color: #333;}
+a:visited {color: #333;}
+a:hover {color: #333;}*/
+#email a:link {
+  color: #333;
 }
 
-a:active {
-  color: white;
+#email a:active {
+  color: #333;
 }
 
-a:visited {
-  color: white;
+#email a:visited {
+  color: #333;
 }
 
-a:hover {
-  color: white;
+#email a:hover {
+  color: #333;
+  text-decoration: underline;
 }
 
 #top {
@@ -77,9 +82,10 @@ h2 {
   font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
   font-size: 28px;
   text-align: center;
-  margin-top: 0px;
+  margin-top: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+  z-index: 2;
 }
 
 #main {
@@ -403,11 +409,12 @@ td a:hover {
 }
 
 #bar {
-  height: 40px;
+  height: 80px;
   background-color: black;
   margin-bottom: 20px;
   position: relative;
-  top: -14px;
+  top: -58px;
+  z-index: -1;
 }
 
 .block {
