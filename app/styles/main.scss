@@ -111,24 +111,12 @@ h3 {
   }
 }
 
-.experience {
-  @include span-columns(4);
-  opacity: 1;
-  text-align: center;
-  border-radius: 50px;
-  background-color: #DDDDDD;
-  height: 300px;
-  width: 340px;
-  color: black;
-  padding: 0px 30px 10px 30px;
-  position: relative;
-  p {
-    font-size: 14px;
-  } 
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+.subjects{
+  @include span-columns(3);
+}
+
+ul {
+  font-size: 20px;
 }
 
 /*.show {
@@ -234,7 +222,7 @@ footer {
 
 h3 {
   font-size: 24px;
-  }
+}
 
 #experience {
   position: relative;

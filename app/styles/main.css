@@ -114,30 +114,18 @@ h3 {
   font-size: 14px;
 }
 
-.experience {
+.subjects {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
-  width: 31.7615656014%;
-  opacity: 1;
-  text-align: center;
-  border-radius: 50px;
-  background-color: #DDDDDD;
-  height: 300px;
-  width: 340px;
-  color: black;
-  padding: 0px 30px 10px 30px;
-  position: relative;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+  width: 23.2317613015%;
 }
-.experience:last-child {
+.subjects:last-child {
   margin-right: 0;
 }
-.experience p {
-  font-size: 14px;
+
+ul {
+  font-size: 20px;
 }
 
 /*.show {
