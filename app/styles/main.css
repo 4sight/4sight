@@ -17,7 +17,7 @@ body {
   background-repeat: no-repeat;
   max-width: 100%;
   width: 2050px;
-  height: 640px;
+  height: 800px;
 }
 
 a {
@@ -71,12 +71,12 @@ h2 {
   z-index: 2;
 }
 
-#main {
+.main {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
 }
-#main:after {
+.main:after {
   content: "";
   display: table;
   clear: both;
@@ -124,8 +124,14 @@ h3 {
   margin-right: 0;
 }
 
+#subjectsWrapper {
+  position: relative;
+  top: -100px;
+}
+
 ul {
   font-size: 20px;
+  text-align: left;
 }
 
 /*.show {

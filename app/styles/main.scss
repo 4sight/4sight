@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   max-width: 100%;
   width: 2050px;
-  height: 640px;
+  height: 800px;
 }
 
 $color1: #7B5940;
@@ -81,7 +81,7 @@ h2 {
   z-index: 2;
 }
 
-#main {
+.main {
   @include outer-container;
 }
 
@@ -111,12 +111,18 @@ h3 {
   }
 }
 
-.subjects{
+.subjects {
   @include span-columns(3);
+}
+
+#subjectsWrapper {
+  position: relative;
+  top: -100px;
 }
 
 ul {
   font-size: 20px;
+  text-align: left;
 }
 
 /*.show {
