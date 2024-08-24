@@ -114,24 +114,37 @@ h3 {
   font-size: 14px;
 }
 
-.subjects {
+.subject {
   float: left;
   display: block;
   margin-right: 2.3576515979%;
   width: 23.2317613015%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-.subjects:last-child {
+.subject:last-child {
   margin-right: 0;
 }
 
 #subjectsWrapper {
   position: relative;
   top: -100px;
+  left: 20%;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
   font-size: 20px;
   text-align: left;
+}
+
+#consultation {
+  position: relative;
+  top: -160px;
 }
 
 /*.show {
@@ -373,7 +386,7 @@ td a:hover {
 }
 
 #bar {
-  height: 80px;
+  height: 140px;
   background-color: black;
   margin-bottom: 20px;
   position: relative;

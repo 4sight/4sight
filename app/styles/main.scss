@@ -97,7 +97,7 @@ h3 {
   left: 0;
   z-index: 1;
   background-image: url('images/empty.gif');
-  }
+}
 
 .step {
   @include span-columns(4);
@@ -111,18 +111,31 @@ h3 {
   }
 }
 
-.subjects {
+.subject {
   @include span-columns(3);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #subjectsWrapper {
   position: relative;
   top: -100px;
+  left: 20%;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
   font-size: 20px;
   text-align: left;
+}
+
+#consultation {
+  position: relative;
+  top: -160px;
 }
 
 /*.show {
@@ -356,7 +369,7 @@ td {
 }
 
 #bar {
-  height: 80px;
+  height: 140px;
   background-color: black;
   margin-bottom: 20px;
   position: relative;
