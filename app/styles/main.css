@@ -403,11 +403,6 @@ td a:hover {
   font-weight: bold;
 }
 
-.bar {
-  display: inline;
-  padding: 0px 8px 0px 8px;
-}
-
 @media only screen and (max-width: 670px) {
   #stars {
     background-size: 1080px;
@@ -421,6 +416,8 @@ td a:hover {
     color: #DDDDDD;
   }
   h2 {
+    position: relative;
+    top: -200px;
     color: #DDDDDD;
   }
   .step p {
@@ -441,9 +438,6 @@ td a:hover {
   #step2text {
     top: 0px;
   }
-  #bar {
-    display: none;
-  }
   .step {
     background-color: transparent;
     margin: 0px;
@@ -452,17 +446,6 @@ td a:hover {
   #githubIconTop {
     left: 5px;
   }
-  .experience {
-    display: inline-block;
-    margin-bottom: 30px;
-    float: none;
-  }
-  #experience {
-    left: 0px;
-    top: 40px;
-    text-align: center;
-    clear: right;
-  }
   #linkedinIcon {
     left: -44px;
   }
@@ -470,6 +453,23 @@ td a:hover {
     position: relative;
     top: -42px;
     left: 44px;
+  }
+  #bar {
+    height: 420px;
+    position: relative;
+    top: -222px;
+  }
+  #subjectsWrapper {
+    position: relative;
+    left: 30%;
+  }
+  footer {
+    color: #DDDDDD;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -50px;
   }
 }
 @media only screen and (min-width: 671px) and (max-width: 980px) {
@@ -510,31 +510,14 @@ td a:hover {
     position: relative;
     top: 30px;
   }
-  .experienceText {
+  #bar {
+    height: 520px;
     position: relative;
-    top: 50px;
+    top: -222px;
   }
-  #essentialEconomyTitle {
+  #subjectsWrapper {
     position: relative;
-    top: 30px;
-  }
-  #essentialEconomyLogo {
-    display: none;
-  }
-  #essentialEconomyText {
-    top: 20px;
-  }
-  #surfAndPaddleText {
-    top: 20px;
-  }
-  #freshairLogo {
-    display: none;
-  }
-  #freshairText {
-    top: 24px;
-  }
-  #freecloudsLogo {
-    display: none;
+    left: 30%;
   }
 }
 @media only screen and (min-width: 980px) and (max-width: 1080px) {
@@ -556,20 +539,14 @@ td a:hover {
   .experience p {
     font-size: 13px;
   }
-  #essentialEconomyLogo {
-    margin-top: 20px;
+  #bar {
+    height: 400px;
+    position: relative;
+    top: -222px;
   }
-  #essentialEconomyText {
-    top: -40px;
-  }
-  #freshairLogo {
-    margin-top: -40px;
-    width: 140px;
-    height: 140px;
-    top: 20px;
-  }
-  #freshairText {
-    top: 24px;
+  #subjectsWrapper {
+    position: relative;
+    left: 30%;
   }
 }
 @media only screen and (min-width: 1080px) and (max-width: 1350px) {
@@ -600,6 +577,22 @@ td a:hover {
   #surfAndPaddleText {
     position: relative;
     top: 34px;
+  }
+  #bar {
+    height: 400px;
+    position: relative;
+    top: -222px;
+  }
+  #subjectsWrapper {
+    position: relative;
+    left: 25%;
+  }
+}
+@media only screen and (min-width: 1351px) {
+  #bar {
+    height: 400px;
+    position: relative;
+    top: -200px;
   }
 }
 
