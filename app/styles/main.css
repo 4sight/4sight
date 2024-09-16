@@ -169,11 +169,11 @@ h3 {
   top: -30px;
 }
 
-#freecloudsLogo {
+#soundcloudLogo {
   opacity: 0.7;
   position: relative;
   top: 15px;
-  height: 70px;
+  height: 80px;
 }
 
 #essentialEconomyText {
@@ -191,18 +191,40 @@ h3 {
   top: -50px;
 }
 
+#soundcloudTile {
+  position: relative;
+  top: 50px;
+}
+
 #soundcloudTitle {
-  font-size: 36px;
+  font-size: 44px;
   font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
-  font-weight: bold;
+  font-weight: 1000;
+  opacity: 0.8;
 }
 
 #essayTitle {
   position: relative;
-  top: 30px;
-  font-size: 24px;
+  top: 25px;
+  font-size: 32px;
   font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
   font-weight: bold;
+}
+
+#githubTitle {
+  font-size: 36px;
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: 1000;
+  opacity: 0.8;
+  position: relative;
+  top: 30px;
+}
+
+#githubLogo {
+  opacity: 0.7;
+  position: relative;
+  top: 15px;
+  height: 70px;
 }
 
 .linkHover {
@@ -552,7 +574,7 @@ td a:hover {
   #freshairText {
     top: 24px;
   }
-  #freecloudsLogo {
+  #soundcloudLogo {
     display: none;
   }
 }
