@@ -230,7 +230,7 @@ footer {
   color: white;
   height: 36px;
   width: 36px;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 #step2image {
@@ -300,7 +300,6 @@ h3 {
 #envelopeIcon {
   height: 40px;
   width: 36px;
-  opacity: 0.7;
 }
 
 #phoneIcon {
@@ -384,6 +383,12 @@ td {
 .bar {
   display: inline;
   padding: 0px $barPadding 0px $barPadding;
+}
+
+#email {
+  position: relative;
+  top: -40px;
+  color: $offWhite;
 }
 
 @media only screen
@@ -569,8 +574,7 @@ and (max-width : 1080px) {
 }
 
 @media only screen
-and (min-width : 1080px)
-and (max-width : 1350px) {
+and (min-width : 1080px) {
   #main {
     position: relative;
     left: 3%;
@@ -589,7 +593,7 @@ and (max-width : 1350px) {
   }
   #footerWrapper {
     position: relative;
-    left: 30px;
+    left: -60px;
   }
   #essentialEconomyLogo {
     height: 100px;
@@ -602,14 +606,5 @@ and (max-width : 1350px) {
   #surfAndPaddleText {
     position: relative;
     top: 34px;
-  }
-}
-
-@media only screen
-and (min-width : 1351px) {
-  #footerWrapper {
-    position: relative;
-    top: 360px;
-    left: -660px;
   }
 }
