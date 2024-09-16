@@ -176,10 +176,6 @@ h3 {
   height: 70px;
 }
 
-h4 {
-  font-size: 20px;
-}
-
 #essentialEconomyText {
   position: relative;
   top: -20px;
@@ -195,9 +191,18 @@ h4 {
   top: -50px;
 }
 
-#freecloudsText {
+#soundcloudTitle {
+  font-size: 36px;
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+#essayTitle {
   position: relative;
-  top: 24px;
+  top: 30px;
+  font-size: 24px;
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+  font-weight: bold;
 }
 
 .linkHover {
