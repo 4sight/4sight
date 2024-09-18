@@ -6,69 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Greeley Dawson</title>
     <link rel='shortcut icon' href='http://www.greeleydawson.com/favicon.png'>
-
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- <link rel="stylesheet" href="bower_components/normalize-css/normalize.css" /> -->
-    <!-- endbower -->
-    <!-- endbuild -->
     <script src="/reload/reload.js"></script>
     <script src="jquery.js" type="text/JavaScript"></script>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <!-- endbuild -->
-
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <!-- <script src="../node_modules/modernizr/src/modernizr.js"></script> -->
-    <!-- endbuild -->
   </head>
-  <!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
   <body>
     <div id='top'>
-        <!-- <a href='mailto:hgd4th@gmail.com'><img src='images/envelope.png' id='envelopeIcon'></a>
-        <a href id='phone'><img src='images/phone.png' id='phoneIcon'></a>
-        <a href='http://github.com/4sight'><img src='images/github.png' id='githubIconTop'></a> -->
+        <a href='mailto:hgd4th@gmail.com'><img src='images/envelope.png' id='envelopeIcon'></a>
+        <!-- <a href id='phone'><img src='images/phone.png' id='phoneIcon'></a> -->
+        <a href='https://www.linkedin.com/in/4site/'><img src='images/linkedin.png' id='linkedinIconTop'></a>
     </div>
     <div id='stars'>
-        <!-- <p id='phoneText'>407.970.6356</p> -->
-        <h1>I'm Greeley Dawson, and I'm based in Atlanta, GA.</h1>
-        <div id='experience'>
-            <div class='experience' style='position: relative; left: -5px;'>
-                <div id='soundcloudTile'>
-                    <a href='https://soundcloud.com/4-sight'><span class='hackSpan'></span></a>
-                    <div id='soundcloudTitle'>My Soundcloud</div>
-                    <img src='images/freeclouds.png' class='experienceImage' id='soundcloudLogo'>
-                </div>
+        <p id='phoneText'>407.970.6356</p>
+        <h1>I'm Greeley Dawson, a private<br>tutor based in Atlanta.</h1>
+        <div class='main'>
+            <div class='step'>
+	            <h3>1. Plan</h3>
+	            <img src='images/compass.png' class='stepImage' style='opacity: 0.7; margin-top: 15px; margin-bottom: 6px; height: 80px; width: 80px;'>
+	            <img src='images/ruler.png' class='stepImage' style='opacity: 0.7; margin-top: 15px; margin-bottom: 6px; height: 80px; width: 80px;'>
+	            <p class='stepText'>Our initial consultation will review learning materials and any goals or metrics for our lessons.</p>
             </div>
-            <div class='experience'>
-                <a href='http://essentialeconomy.herokuapp.com/'><span class='hackSpan'></span></a>
-                <div id='essayTitle'>Spacetime's Structure, Perception & Intention, and the Case Against Ethical Non-Monogamy</div>
+            <div class='step'>
+                <h3>2. Teach</h3>
+                <div class='boxText' id='step2image'><img src='images/books.png' class='stepImage' height=80px width=80px style='opacity: 0.55; margin-top: 0px; margin-bottom: -16px; height: 100px; width: 100px;'></div>
+                <p class='stepText' id='step2text'>My lessons will teach whatever skills and knowledge students need with measurable results.</p>
             </div>
-            <div class='experience' style='position: relative; left: -5px;'>
-                <div id='githubTile'>
-                    <a href='https://github.com/4sight'><span class='hackSpan'></span></a>
-                    <div style='margin-right: 30px;'>
-                        <div id='githubTitle' style='position: relative; left: 16px;'>
-                            My Github
-                        </div>
-                    </div>
-                    <img src='images/github_black.png' class='experienceImage' id='githubLogo'>
-                </div>
+            <div class='step'>
+                <h3>3. Evaluate</h3>
+                <img src='images/graph.png' class='stepImage' height=80px width=80px style='opacity: 0.55; margin-top: 0px; margin-bottom: -2px; height: 100px; width: 100px;'>
+                <p class='stepText'>I will make sure my students are improving and adjust lessons accordingly.</p>
             </div>
+        </div>
+        <h2>I provide lessons for students of all ages in:</h2>
+        <div class='main' id='subjectsWrapper'>
+            <div class='subject'>
+                <h2><ul>
+                    <li>General arithmetic</li>
+                    <li>Pre-algebra</li>
+                    <li>Algebra</li>
+                    <li>Biology</li>
+                    <li>Astronomy</li>
+                    <li>Earth science</li>
+                    <li>English</li>
+                    <li>History</li>
+                </ul></h2>
+            </div>
+            <div class='subject'>
+                <h2><ul>
+                    <li>Social studies</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SAT test prep</li>
+                    <li>PSAT test prep</li>
+                    <li>ACT test prep</li>
+                </ul></h2>
+            </div>
+        </div>
+        <div id='consultation'>
+            <h2>Email me at <a id='email' href='mailto:hgd4th@gmail.com'>hgd4th@gmail.com</a> for a free consultation.</h2>
         </div>
     </div>
     <div id='bar'></div>
-    <div id='footerWrapper'><footer>
-        <p style='margin-bottom: 20px;'><a href='mailto:horace.dawson@ncf.edu' id='email'>hgd4th@gmail.com</a></p>
-        <!-- <p style='margin-bottom: 50px; margin-top: -10px'>407.970.6356</p> -->
-        <a href='http://github.com/4sight' id='github'><img src='images/github.png' id='githubIconBottom'></a>
-        <div class='hiddenText' id='githubText'>Visit my Github profile</div>
-        <a href='https://www.linkedin.com/profile/view?id=115638716' id='linkedIn'><img src='images/linkedin.png' id='linkedinIcon'></a>
-        <div class='hiddenText' id='linkedInText'>Visit my LinkedIn profile</div>
-        <p><a href='http://soundcloud.com/4-sight' id='soundcloud'><img src='images/soundcloud.png' id='soundcloudIcon'></a>
-        <div class='hiddenText' id='soundcloudText'>Visit my Soundcloud page</div></p>
-        <p id='copyright'>Copyright &copy 2024 - Greeley Dawson</p>
-    </footer></div>
-    <script src="scripts/main.js"></script>
+    </div>
+    <footer><p id='copyright'>Copyright &copy 2024 - Greeley Dawson</p></footer>
+    <!-- </div> -->
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- <script src="../bower_components/underscore/underscore.js" type="text/JavaScript"></script> -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 </body>
 </html>
