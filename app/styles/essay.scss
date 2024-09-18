@@ -1,0 +1,19 @@
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #15395D;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
