@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
   max-width: 100%;
   width: 2050px;
-  height: 800px;
+  height: 580px;
 }
 
 $color1: #7B5940;
@@ -27,9 +27,10 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+a:link {color: #333;}
+a:active {color: #333;}
+a:visited {color: #333;}
+a:hover {color: #333;}
 
 #top {
   height: 42px;
@@ -71,17 +72,14 @@ h1 {
 }
 
 h2 {
-  color: #DDDDDD;
   font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  z-index: 2;
+  color: grey;
+  margin-bottom: 40px;
 }
 
-.main {
+#main {
   @include outer-container;
 }
 
@@ -97,7 +95,7 @@ h3 {
   left: 0;
   z-index: 1;
   background-image: url('images/empty.gif');
-}
+  }
 
 .step {
   @include span-columns(4);
@@ -111,31 +109,24 @@ h3 {
   }
 }
 
-.subject {
-  @include span-columns(3);
+.experience {
+  @include span-columns(4);
+  opacity: 1;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#subjectsWrapper {
+  border-radius: 50px;
+  background-color: #DDDDDD;
+  height: 300px;
+  width: 340px;
+  color: black;
+  padding: 0px 30px 10px 30px;
   position: relative;
-  top: -100px;
-  left: 20%;
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-ul {
-  font-size: 20px;
-  text-align: left;
-}
-
-#consultation {
-  position: relative;
-  top: -160px;
+  p {
+    font-size: 14px;
+  } 
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 /*.show {
@@ -208,12 +199,25 @@ h4 {
   padding-left: 150px;
 }
 
+.skill {
+  height: 200px;
+}
+
+#footerWrapper {
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
 footer {
+  text-align: center;
   color: $offWhite;
+  display: inline-block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  left: 100px;
 }
 
 .hiddenText {
@@ -241,7 +245,7 @@ footer {
 
 h3 {
   font-size: 24px;
-}
+  }
 
 #experience {
   position: relative;
@@ -264,10 +268,10 @@ h3 {
   height: 40px;
   width: 40px;
   position: relative;
-  top: -5px;
+  top: -10px + $padding;
   opacity: 0.9;
   color: white;
-  right: -104px;
+  right: -10px;
 }
 
 #githubIconBottom {
@@ -283,14 +287,14 @@ h3 {
   height: 80px;
   width: 80px;
   bottom: 80px;
-  right: 20px;
+  right: 4px;
   opacity: 0.9;
 }
 
 #soundcloudText {
   @include hiddenText;
-  top: -150px;
-  right: 130px;
+  top: -120px;
+  right: -2px;
 }
 
 #envelopeIcon {
@@ -319,17 +323,9 @@ h3 {
   left: -50px;
 }
 
-#linkedinIconTop {
-  height: 30px;
-  width: 30px;
-  opacity: 0.7;
-  position: relative;
-  top: -7px;
-}
-
 #copyright {
   position: relative;
-  top: -148px;
+  top: -120px;
 }
 
 #freshairLogo {
@@ -369,12 +365,11 @@ td {
 }
 
 #bar {
-  height: 140px;
+  height: 40px;
   background-color: black;
   margin-bottom: 20px;
   position: relative;
-  top: -58px;
-  z-index: -1;
+  top: -14px;
 }
 
 .block {
@@ -384,6 +379,11 @@ td {
 .place {
   display: inline;
   font-weight: bold;
+}
+
+.bar {
+  display: inline;
+  padding: 0px $barPadding 0px $barPadding;
 }
 
 @media only screen
@@ -401,8 +401,6 @@ and (max-width : 670px) {
     color: #DDDDDD;
   }
   h2 {
-    position: relative;
-    top: -200px;
     color: #DDDDDD;
   }
   .step p {
@@ -423,6 +421,9 @@ and (max-width : 670px) {
   #step2text{
     top: 0px;
   }
+  #bar {
+    display: none;
+  }
   .step {
     background-color: transparent;
     margin: 0px;
@@ -431,6 +432,20 @@ and (max-width : 670px) {
   #githubIconTop {
     left: 5px;
   }
+  .experience {
+    display: inline-block;
+    margin-bottom: 30px;  
+    float: none;
+  }
+  #experience {
+    left: 0px;
+    top: 40px;
+    text-align: center;
+    clear: right;
+  }
+  #footerWrapper {
+    display: block;
+  }
   #linkedinIcon {
     left: -44px;
   }
@@ -438,23 +453,6 @@ and (max-width : 670px) {
     position: relative;
     top: -42px;
     left: 44px;
-  }
-  #bar {
-    height: 420px;
-    position: relative;
-    top: -222px;
-  }
-  #subjectsWrapper {
-    position: relative;
-    left: 30%;
-  }
-  footer {
-    color: $offWhite;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: -50px;
   }
 }
 
@@ -498,14 +496,31 @@ and (max-width : 980px) {
     position: relative;
     top: 30px;
   }
-  #bar {
-    height: 520px;
+  .experienceText {
     position: relative;
-    top: -222px;
+    top: 50px;
   }
-  #subjectsWrapper {
+  #essentialEconomyTitle {
     position: relative;
-    left: 30%;
+    top: 30px;
+  }
+  #essentialEconomyLogo {
+    display: none;
+  }
+  #essentialEconomyText {
+    top: 20px;
+  }
+  #surfAndPaddleText {
+    top: 20px;
+  }
+  #freshairLogo {
+    display: none;
+  }
+  #freshairText {
+    top: 24px;
+  }
+  #freecloudsLogo {
+    display: none;
   }
 }
 
@@ -530,14 +545,26 @@ and (max-width : 1080px) {
   .experience p {
     font-size: 13px;
   }
-  #bar {
-    height: 400px;
+  #footerWrapper {
     position: relative;
-    top: -222px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 30px;
   }
-  #subjectsWrapper {
-    position: relative;
-    left: 30%;
+  #essentialEconomyLogo {
+    margin-top: 20px;
+  }
+  #essentialEconomyText {
+    top: -40px;
+  }
+  #freshairLogo {
+    margin-top: -40px;
+    width: 140px;
+    height: 140px;
+    top: 20px;
+  }
+  #freshairText {
+    top: 24px;
   }
 }
 
@@ -553,12 +580,16 @@ and (max-width : 1350px) {
     left: 10%;
   }
   .step {
-    width: 30%;
-    height: 300px;
+      width: 30%;
+      height: 300px;
   }
   .experience {
     width: 27%;
     height: 300px;
+  }
+  #footerWrapper {
+    position: relative;
+    left: 30px;
   }
   #essentialEconomyLogo {
     height: 100px;
@@ -572,22 +603,13 @@ and (max-width : 1350px) {
     position: relative;
     top: 34px;
   }
-  #bar {
-    height: 400px;
-    position: relative;
-    top: -222px;
-  }
-  #subjectsWrapper {
-    position: relative;
-    left: 25%;
-  }
 }
 
 @media only screen
 and (min-width : 1351px) {
-  #bar {
-    height: 400px;
+  #footerWrapper {
     position: relative;
-    top: -200px;
+    top: 360px;
+    left: -660px;
   }
 }
