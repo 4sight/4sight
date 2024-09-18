@@ -16,8 +16,18 @@ body {
 h1 {
   font-size: 36px;
   text-align: center;
-  position: relative;
-  top: 40px;
+  margin-top: 40px;
+}
+
+#by {
+  text-align: center;
+  font-style: italic;
+}
+
+#author {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=essay.css.map */
