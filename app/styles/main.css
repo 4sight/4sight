@@ -1,13 +1,15 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #15395D;
   margin: 0px;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 #stars {
   background-image: url(../images/background.jpg);
@@ -15,32 +17,40 @@ body {
   background-repeat: no-repeat;
   max-width: 100%;
   width: 2050px;
-  height: 580px; }
+  height: 580px;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 a:link {
-  color: #333; }
+  color: #333;
+}
 
 a:active {
-  color: #333; }
+  color: #333;
+}
 
 a:visited {
-  color: #333; }
+  color: #333;
+}
 
 a:hover {
-  color: #333; }
+  color: #333;
+}
 
 #top {
   height: 42px;
   text-align: center;
   color: white;
   padding-top: 4px;
-  letter-spacing: 10px; }
+  letter-spacing: 10px;
+}
 
 .fa-phone, .fa-envelope-o, .fa-github, #email {
-  color: white; }
+  color: white;
+}
 
 #phoneText {
   /*@include hiddenText;*/
@@ -49,35 +59,41 @@ a:hover {
   font-size: 24px;
   margin: 0px;
   padding: 5px 0px 0px 0px;
-  opacity: 0; }
+  opacity: 0;
+}
 
 h1 {
   color: #DDDDDD;
-  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
   font-size: 36px;
   text-align: center;
   margin-top: 0px;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 h2 {
-  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
   font-size: 24px;
   text-align: center;
   color: grey;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+}
 
 #main {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
-  #main:after {
-    content: "";
-    display: table;
-    clear: both; }
+  margin-right: auto;
+}
+#main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 h3 {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .hackSpan {
   position: absolute;
@@ -86,28 +102,32 @@ h3 {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: url("images/empty.gif"); }
+  background-image: url("images/empty.gif");
+}
 
 .step {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
   text-align: center;
   border-radius: 50px;
   background-color: #DDDDDD;
   height: 300px;
-  padding: 0px 30px 10px 30px; }
-  .step:last-child {
-    margin-right: 0; }
-  .step p {
-    font-size: 14px; }
+  padding: 0px 30px 10px 30px;
+}
+.step:last-child {
+  margin-right: 0;
+}
+.step p {
+  font-size: 14px;
+}
 
 .experience {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
   opacity: 1;
   text-align: center;
   border-radius: 50px;
@@ -120,76 +140,93 @@ h3 {
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   -o-transition: all 1s ease;
-  transition: all 1s ease; }
-  .experience:last-child {
-    margin-right: 0; }
-  .experience p {
-    font-size: 14px; }
+  transition: all 1s ease;
+}
+.experience:last-child {
+  margin-right: 0;
+}
+.experience p {
+  font-size: 14px;
+}
 
 /*.show {
   opacity: 1;
 }*/
 .experienceImage {
-  transition: transform .2s; }
+  transition: transform 0.2s;
+}
 
 .experienceImage:hover {
   transform: scale(1.2);
-  animation-timing-function: cubic-bezier(0, 1.46, 0.85, 1); }
+  animation-timing-function: cubic-bezier(0, 1.46, 0.85, 1);
+}
 
 #essentialEconomyLogo {
   opacity: 0.7;
   width: 200px;
   height: 110px;
   position: relative;
-  top: -30px; }
+  top: -30px;
+}
 
 #freecloudsLogo {
   opacity: 0.7;
   position: relative;
   top: 15px;
-  height: 70px; }
+  height: 70px;
+}
 
 h4 {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 #essentialEconomyText {
   position: relative;
-  top: -20px; }
+  top: -20px;
+}
 
 #freshairTitle {
   position: relative;
-  left: 16px; }
+  left: 16px;
+}
 
 #freshairText {
   position: relative;
-  top: -50px; }
+  top: -50px;
+}
 
 #freecloudsText {
   position: relative;
-  top: 24px; }
+  top: 24px;
+}
 
 .linkHover {
-  box-shadow: 0 0 20px 10px #7B5940; }
+  box-shadow: 0 0 20px 10px #7B5940;
+}
 
 .boxText {
   font-size: 90px;
-  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
-  color: #666666; }
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+  color: #666666;
+}
 
 #skills {
   color: #DDDDDD;
-  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif;
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
   font-size: 20px;
   font-weight: 800;
-  padding-left: 150px; }
+  padding-left: 150px;
+}
 
 .skill {
-  height: 200px; }
+  height: 200px;
+}
 
 #footerWrapper {
   text-align: center;
   position: relative;
-  top: 40px; }
+  top: 40px;
+}
 
 footer {
   text-align: center;
@@ -199,10 +236,12 @@ footer {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  left: 100px; }
+  left: 100px;
+}
 
 .hiddenText {
-  display: inline-block; }
+  display: inline-block;
+}
 
 #githubIconTop {
   position: relative;
@@ -210,32 +249,39 @@ footer {
   color: white;
   height: 36px;
   width: 36px;
-  opacity: 0.7; }
+  opacity: 0.7;
+}
 
 #step2image {
   position: relative;
-  top: -20px; }
+  top: -20px;
+}
 
 #step2text {
   position: relative;
-  top: -34px; }
+  top: -34px;
+}
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 #experience {
   position: relative;
   left: 240px;
   color: #DDDDDD;
-  font-family: "Interstate","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Garuda,Verdana,Tahoma,sans-serif; }
+  font-family: "Interstate", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+}
 
 #experienceTitle {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 .experienceText {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 #linkedinIcon {
   height: 40px;
@@ -244,14 +290,16 @@ h3 {
   top: -40px;
   opacity: 0.9;
   color: white;
-  right: -10px; }
+  right: -10px;
+}
 
 #githubIconBottom {
   position: relative;
   top: -40px;
   left: 144px;
   height: 38px;
-  width: 38px; }
+  width: 38px;
+}
 
 #soundcloudIcon {
   position: relative;
@@ -259,7 +307,8 @@ h3 {
   width: 80px;
   bottom: 80px;
   right: 4px;
-  opacity: 0.9; }
+  opacity: 0.9;
+}
 
 #soundcloudText {
   color: #DDDDDD;
@@ -267,19 +316,22 @@ h3 {
   position: relative;
   opacity: 0;
   top: -120px;
-  right: -2px; }
+  right: -2px;
+}
 
 #envelopeIcon {
   height: 40px;
   width: 36px;
-  opacity: 0.7; }
+  opacity: 0.7;
+}
 
 #phoneIcon {
   height: 30px;
   width: 30px;
   opacity: 0.7;
   position: relative;
-  top: -7px; }
+  top: -7px;
+}
 
 #linkedInText {
   color: #DDDDDD;
@@ -287,7 +339,8 @@ h3 {
   position: relative;
   opacity: 0;
   top: -54px;
-  right: -20px; }
+  right: -20px;
+}
 
 #githubText {
   color: #DDDDDD;
@@ -295,18 +348,21 @@ h3 {
   position: relative;
   opacity: 0;
   top: -54px;
-  left: -50px; }
+  left: -50px;
+}
 
 #copyright {
   position: relative;
-  top: -120px; }
+  top: -120px;
+}
 
 #freshairLogo {
   width: 150px;
   height: auto;
   position: relative;
   top: -30px;
-  opacity: 0.82; }
+  opacity: 0.82;
+}
 
 #download {
   text-align: center;
@@ -317,194 +373,260 @@ h3 {
   padding: 10px;
   position: absolute;
   top: 100px;
-  left: 80px; }
+  left: 80px;
+}
 
 td {
   padding: 0px 25px 0px 25px;
-  line-height: 22px; }
-  td a {
-    text-decoration: underline; }
-  td a:hover {
-    color: #7B5940; }
+  line-height: 22px;
+}
+td a {
+  text-decoration: underline;
+}
+td a:hover {
+  color: #7B5940;
+}
 
 .label {
   width: 250px;
-  text-align: right; }
+  text-align: right;
+}
 
 #bar {
   height: 40px;
   background-color: black;
   margin-bottom: 20px;
   position: relative;
-  top: -14px; }
+  top: -14px;
+}
 
 .block {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 .place {
   display: inline;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .bar {
   display: inline;
-  padding: 0px 8px 0px 8px; }
+  padding: 0px 8px 0px 8px;
+}
 
 @media only screen and (max-width: 670px) {
   #stars {
-    background-size: 1080px; }
+    background-size: 1080px;
+  }
   #main {
     position: relative;
-    top: 30px; }
+    top: 30px;
+  }
   h3 {
     font-size: 24px;
-    color: #DDDDDD; }
+    color: #DDDDDD;
+  }
   h2 {
-    color: #DDDDDD; }
+    color: #DDDDDD;
+  }
   .step p {
-    font-size: 12px; }
+    font-size: 12px;
+  }
   .stepText {
-    color: #DDDDDD; }
+    color: #DDDDDD;
+  }
   .hiddenText {
-    display: none; }
+    display: none;
+  }
   .stepImage {
-    display: none; }
+    display: none;
+  }
   #step2image {
-    display: none; }
+    display: none;
+  }
   #step2text {
-    top: 0px; }
+    top: 0px;
+  }
   #bar {
-    display: none; }
+    display: none;
+  }
   .step {
     background-color: transparent;
     margin: 0px;
-    padding: 5px; }
+    padding: 5px;
+  }
   #githubIconTop {
-    left: 5px; }
+    left: 5px;
+  }
   .experience {
     display: inline-block;
     margin-bottom: 30px;
-    float: none; }
+    float: none;
+  }
   #experience {
     left: 0px;
     top: 40px;
     text-align: center;
-    clear: right; }
+    clear: right;
+  }
   #footerWrapper {
-    display: block; }
+    display: block;
+  }
   #linkedinIcon {
-    left: -44px; }
+    left: -44px;
+  }
   #githubIconBottom {
     position: relative;
     top: -42px;
-    left: 44px; } }
-
+    left: 44px;
+  }
+}
 @media only screen and (min-width: 671px) and (max-width: 980px) {
   #stars {
-    background-size: 1080px; }
+    background-size: 1080px;
+  }
   .stepImage,
   .freshairLogo {
-    display: none; }
+    display: none;
+  }
   h3 {
     position: relative;
-    top: 40px; }
+    top: 40px;
+  }
   .stepText {
     position: relative;
-    top: 40px; }
+    top: 40px;
+  }
   #step2text {
-    top: 40px; }
+    top: 40px;
+  }
   #step2image {
-    display: none; }
+    display: none;
+  }
   .experience {
     width: 31%;
-    height: 240px; }
+    height: 240px;
+  }
   .step p,
   .experience p {
-    font-size: 13px; }
+    font-size: 13px;
+  }
   #experience {
     position: relative;
-    left: 20px; }
+    left: 20px;
+  }
   h4 {
     position: relative;
-    top: 30px; }
+    top: 30px;
+  }
   .experienceText {
     position: relative;
-    top: 50px; }
+    top: 50px;
+  }
   #essentialEconomyTitle {
     position: relative;
-    top: 30px; }
+    top: 30px;
+  }
   #essentialEconomyLogo {
-    display: none; }
+    display: none;
+  }
   #essentialEconomyText {
-    top: 20px; }
+    top: 20px;
+  }
   #surfAndPaddleText {
-    top: 20px; }
+    top: 20px;
+  }
   #freshairLogo {
-    display: none; }
+    display: none;
+  }
   #freshairText {
-    top: 24px; }
+    top: 24px;
+  }
   #freecloudsLogo {
-    display: none; } }
-
+    display: none;
+  }
+}
 @media only screen and (min-width: 980px) and (max-width: 1080px) {
   #main,
   #experience {
     position: relative;
-    left: 5%; }
+    left: 5%;
+  }
   .experience,
   .step {
     width: 30%;
     height: 300px;
-    font-size: 13px; }
+    font-size: 13px;
+  }
   #stars {
-    background-size: 1080px; }
+    background-size: 1080px;
+  }
   .step p,
   .experience p {
-    font-size: 13px; }
+    font-size: 13px;
+  }
   #footerWrapper {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    left: 30px; }
+    left: 30px;
+  }
   #essentialEconomyLogo {
-    margin-top: 20px; }
+    margin-top: 20px;
+  }
   #essentialEconomyText {
-    top: -40px; }
+    top: -40px;
+  }
   #freshairLogo {
     margin-top: -40px;
     width: 140px;
     height: 140px;
-    top: 20px; }
+    top: 20px;
+  }
   #freshairText {
-    top: 24px; } }
-
+    top: 24px;
+  }
+}
 @media only screen and (min-width: 1080px) and (max-width: 1350px) {
   #main {
     position: relative;
-    left: 3%; }
+    left: 3%;
+  }
   #experience {
     position: relative;
-    left: 10%; }
+    left: 10%;
+  }
   .step {
     width: 30%;
-    height: 300px; }
+    height: 300px;
+  }
   .experience {
     width: 27%;
-    height: 300px; }
+    height: 300px;
+  }
   #footerWrapper {
     position: relative;
-    left: 30px; }
+    left: 30px;
+  }
   #essentialEconomyLogo {
     height: 100px;
-    width: 190px; }
+    width: 190px;
+  }
   #essentialEconomyText {
     position: relative;
-    top: -40px; }
+    top: -40px;
+  }
   #surfAndPaddleText {
     position: relative;
-    top: 34px; } }
-
+    top: 34px;
+  }
+}
 @media only screen and (min-width: 1351px) {
   #footerWrapper {
     position: relative;
     top: 360px;
-    left: -660px; } }
+    left: -660px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
